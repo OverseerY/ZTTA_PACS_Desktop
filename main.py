@@ -6,8 +6,8 @@ from classes.preferences import Preferences
 
 
 class MyWindow(QWidget):
-    name_validator = QRegExpValidator(QRegExp("^[A-Z][a-z]+[ ][A-Z][.][A-Z][.]"))
-    department_validator = QRegExpValidator(QRegExp("^[A-Z][A-Za-z]+"))
+    name_validator = QRegExpValidator(QRegExp("^[А-ЯA-Z][А-Яа-яA-Za-z]+[ ][А-ЯA-Z][.][А-ЯA-Z][.]"))
+    department_validator = QRegExpValidator(QRegExp("^[А-ЯA-Z][А-Яа-я]+"))
     device_flag = False
 
     def closeEvent(self, event):
